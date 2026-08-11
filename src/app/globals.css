@@ -23,7 +23,7 @@
   --color-accent: var(--accent);
   --color-border: var(--border);
   --color-navbar: var(--navbar);
-  --color-switch: var(--switch)
+  --color-switch: var(--switch);
 
   /* ----- Layout global ----- */
   --container-content: 80rem; /* 1280px */
@@ -98,7 +98,7 @@ html[data-theme="dark"] [data-area="games"]{
   --accent: #E0FBFC;
   --border: #5C6B73;
   --navbar: #33474E;
-  --switch: var(--foreground);;
+  --switch: var(--foreground);
 }
 
 body {
