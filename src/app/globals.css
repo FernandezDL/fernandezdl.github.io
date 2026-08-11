@@ -85,7 +85,7 @@ html[data-theme="light"] [data-area="games"]{
   --accent: #9DB4C0;
   --border: #9DB4C0;
   --navbar: #253237;
-  --switch: #b6c09d;
+  --switch: #border;
 }
 
 /* ----- Dark Mode -----*/
