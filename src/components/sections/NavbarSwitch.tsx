@@ -13,7 +13,7 @@ export default function NavbarSwitch({leftLabel, rightLabel, checked, onChange, 
             <span className={`${checked ? "font-bold" : ""}
                     ${hasScrolled 
                         ? checked 
-                            ? "text-foreground" 
+                            ? "text-switch" 
                             : "text-white"
                         : checked
                             ? "text-muted"
@@ -25,9 +25,10 @@ export default function NavbarSwitch({leftLabel, rightLabel, checked, onChange, 
             </span>
 
             <button type="button" role="switch" aria-label={ariaLabel} aria-checked={checked} onClick={onChange}
-                    className="relative h-7 w-12 rounded-full border border-border bg-surface transition-colors
-                        focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
-                <span aria-hidden="true" className={`absolute top-1/2 size-4 -translate-y-1/2 rounded-full bg-primary
+                    className={`relative h-7 w-12 rounded-full border bg-surface transition-colors
+                        focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent
+                        ${hasScrolled ? "border-white" : "border-border"}`}>
+                <span aria-hidden="true" className={`absolute top-1/2 size-4 -translate-y-1/2 rounded-full ${hasScrolled ? "bg-white" : "bg-primary"}
                     transition-transform duration-200 ${checked ? "translate-x-0" : "-translate-x-full"}`}
                 />
             </button>
@@ -36,7 +37,7 @@ export default function NavbarSwitch({leftLabel, rightLabel, checked, onChange, 
                     ${hasScrolled 
                         ? checked 
                             ? "text-white"
-                            : "text-foreground"
+                            : "text-switch"
                         : checked
                             ? "text-foreground" 
                             : "text-muted"

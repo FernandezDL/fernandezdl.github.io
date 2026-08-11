@@ -68,7 +68,7 @@ export const enContent: LocalizedPortfolioContent = {
         },
 
         contactSection: {
-			text: "Open to full-time opportunities, freelance contracts, and consulting work.",
+			text: "Open to full-time opportunities, freelance projects, and consulting work.",
 			phone: "Phone",
 			name: "Name",
 			message: "Message",
@@ -165,7 +165,7 @@ export const enContent: LocalizedPortfolioContent = {
         },
 
         contactSection: {
-			text: "Open to full-time opportunities, freelance contracts, and consulting work.",
+			text: "Open to full-time opportunities, freelance projects, and consulting work.",
 			phone: "Phone",
 			name: "Name",
 			message: "Message",

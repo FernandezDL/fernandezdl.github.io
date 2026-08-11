@@ -22,6 +22,8 @@
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);
   --color-border: var(--border);
+  --color-navbar: var(--navbar);
+  --color-switch: var(--switch)
 
   /* ----- Layout global ----- */
   --container-content: 80rem; /* 1280px */
@@ -41,6 +43,8 @@
   --secondary: #A4133C;
   --accent: #FF4D6D;
   --border: #800F2F;
+  --navbar: #FF758F;
+  --switch: #FF758F;
 }
 
 /* ===== Web Development ===== */
@@ -52,7 +56,9 @@ html[data-theme="light"] [data-area="web"]{
   --primary: #590D22;
   --secondary: #A4133C;
   --accent: #FF4D6D;
-  --border: #800F2F
+  --border: #800F2F;
+  --navbar: #590D22;
+  --switch: var(--foreground);
 }
 
 /* ----- Dark Mode -----*/
@@ -64,6 +70,8 @@ html[data-theme="dark"] [data-area="web"]{
   --secondary: #FF4D6D;
   --accent: #FF758F;
   --border: #8F2D4A;
+  --navbar: #4A1025;
+  --switch: var(--foreground);
 }
 
 /* ===== Game Development ===== */
@@ -76,6 +84,8 @@ html[data-theme="light"] [data-area="games"]{
   --secondary: #5C6B73;
   --accent: #9DB4C0;
   --border: #9DB4C0;
+  --navbar: #253237;
+  --switch: #b6c09d;
 }
 
 /* ----- Dark Mode -----*/
@@ -87,6 +97,8 @@ html[data-theme="dark"] [data-area="games"]{
   --secondary: #9DB4C0;
   --accent: #E0FBFC;
   --border: #5C6B73;
+  --navbar: #33474E;
+  --switch: var(--foreground);;
 }
 
 body {

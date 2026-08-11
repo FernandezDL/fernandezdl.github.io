@@ -54,13 +54,13 @@ export default function Navbar({navigation, navbarSwitches}: NavbarProps) {
     }
 
     function toggleTheme() {
-    const nextTheme: Theme =
-        theme === "light" ? "dark" : "light";
+        const nextTheme: Theme =
+            theme === "light" ? "dark" : "light";
 
-    setTheme(nextTheme);
-    document.documentElement.dataset.theme = nextTheme;
-    localStorage.setItem("theme", nextTheme);
-}
+        setTheme(nextTheme);
+        document.documentElement.dataset.theme = nextTheme;
+        localStorage.setItem("theme", nextTheme);
+    }
 
     function toggleLanguage() {
         const nextLanguage: PortfolioLang = language === "en" ? "es" : "en";
@@ -88,11 +88,11 @@ export default function Navbar({navigation, navbarSwitches}: NavbarProps) {
     }, [area, language]);
 
     return (
-        <Disclosure as="nav" className={`sticky top-0 text-foreground ${hasScrolled ? "bg-muted opacity-85" : ""}`}>
-            <div className={`mx-auto max-w-screen-2xl sticky top-0 px-5 ${hasScrolled ? "bg-muted opacity-85" : ""} sm:px-8`}>
+        <Disclosure as="nav" className={`sticky top-0 text-foreground z-500 ${hasScrolled ? "bg-navbar" : ""}`}>
+            <div className={`mx-auto max-w-screen-2xl sticky top-0 px-5 ${hasScrolled ? "bg-navbar" : ""} sm:px-8`}>
                 <div className="flex h-20 items-center justify-between sticky top-0 ">
                     {/* Logo */}
-                    <Link href={`/${language}/${area}`} className="shrink-0 font-newspaper text-xl font-bold text-primary">
+                    <Link href={`/${language}/${area}`} className={`shrink-0 font-newspaper text-xl font-bold ${hasScrolled ? "text-white" : "text-primary"}`}>
                         {/* @TODO: change to logo */}
                         DF.
                     </Link>

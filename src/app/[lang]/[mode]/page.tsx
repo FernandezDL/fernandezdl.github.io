@@ -9,6 +9,10 @@ import Projects from "@/components/projects/projectCard";
 import AcademicExperience from "@/components/sections/academicExperience";
 import WorkExperience from "@/components/sections/workExperience";
 import Footer from "@/components/layout/Footer";
+import MailIcon from "@/components/Icons/mail";
+import GithubIcon from "@/components/Icons/github";
+import LinkedinIcon from "@/components/Icons/linkedin";
+import PhoneIcon from "@/components/Icons/phone";
 
 type PortfolioPageProps = {
 	params: Promise<{
@@ -39,6 +43,7 @@ export function generateStaticParams() {
 export default async function PortfolioPage({params}: PortfolioPageProps) {
   const { lang, mode } = await params;
 
+  
   if (!isPortfolioLang(lang) || !isPortfolioType(mode)) {
     notFound();
   }
@@ -194,25 +199,29 @@ export default async function PortfolioPage({params}: PortfolioPageProps) {
 					</div>
 
 					<div className="mt-4 lg:flex">
-						<div className="w-full lg:w-1/2">
-							<p className="text-xs lg:text-md">{portfolioContent.contactSection.text}</p>
+						<div className="w-full">
+							<p className="text-xs lg:text-lg lg:pr-10">{portfolioContent.contactSection.text}</p>
 
-							<div className="flex space-x-2">
-								<p className="text-md font-bold">Email:</p>
-								<p className="text-md">dianaluciafv@gmail.com</p>
+							<div className="flex space-x-2 cursor-pointer my-3">
+								<a href="mailto:dianaluciafv@gmail.com">
+									<MailIcon/>
+								</a>
+
+								<a href="https://github.com/FernandezDL" target="_blank" rel="noopener noreferrer">
+									<GithubIcon/>
+								</a>
+								
+								<a href="https://www.linkedin.com/in/fernandezdl" target="_blank" rel="noopener noreferrer">
+									<LinkedinIcon />
+								</a>
 							</div>
 
-							<div className="flex space-x-2">
-								<p className="text-md font-bold">GitHub:</p>
-								<p className="text-md">FernandezDL</p>
-							</div>
-
-							<div className="flex space-x-2">
-								<p className="text-md font-bold">{portfolioContent.contactSection.phone}:</p>
+							<div className="flex space-x-2 items-center">
+								<PhoneIcon/>
 								<p className="text-md">(+502) 4023-8478</p>
 							</div>
 						</div>
-						<div className="w-full mt-4 lg:mt-0 lg:w-1/2 justify-end">
+						{/* <div className="w-full mt-4 lg:mt-0 lg:w-1/2 justify-end">
 							<p className="text-md">{portfolioContent.contactSection.name}:</p>
 							<input type="text" className="border-2 border-primary px-2 py-1 w-full" />
 
@@ -223,13 +232,13 @@ export default async function PortfolioPage({params}: PortfolioPageProps) {
 							<textarea className="border-2 border-primary px-2 py-1 w-full" />
 
 							<button className="bg-primary text-background px-4 py-2 mt-4 lg:w-1/4">{portfolioContent.contactSection.button}</button>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<Footer footerSection={portfolioContent.footerSection} />
+		<Footer footerSection={portfolioContent.footerSection} navigation={portfolioContent.navigation}/>
     </main>
   );
 }
