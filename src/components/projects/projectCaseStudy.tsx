@@ -47,9 +47,11 @@ export default function ProjectCaseStudy({project, onClose}: ProjectCaseStudyPro
                     </p>
                     
                     <div className="flex space-x-2">
-                        <a href={project.hostedLink}>
-                            <ItchIcon/>
-                        </a>
+                        {project.hostedLink && (
+                            <a href={project.hostedLink}>
+                                <ItchIcon/>
+                            </a>
+                        )}
                     </div>
                 </div>
 
