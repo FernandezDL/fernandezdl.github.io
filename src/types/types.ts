@@ -1,5 +1,6 @@
 export type PortfolioType = "web" | "games";
 export type PortfolioLang = "en" | "es";
+export type Tab = "overview" | "challenges" | "role" | "goals" | "technologies";
 
 export type Navigation = {
   about: string;
@@ -54,7 +55,31 @@ export type Project = {
   image: string;
   tags: string[];
   year: number;
+  overview: string;
+  problems: ProblemSection[];
+  goals: GoalSection;
+  myRole: RoleSection[];
+  technologies: string[];
+  hostedLink: string;
+  githubLink: string | null;
+  videos: string[];
 };
+
+export type ProblemSection = {
+  id: string;
+  title: string;
+  description: string;
+};
+
+export type GoalSection = {
+  description: string;
+  objectives: string[];
+}
+
+export type RoleSection = {
+  title: string;
+  tasks: string[];
+}
 
 export type Experience = {
   company: string;

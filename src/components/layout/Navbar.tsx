@@ -88,7 +88,7 @@ export default function Navbar({navigation, navbarSwitches}: NavbarProps) {
     }, [area, language]);
 
     return (
-        <Disclosure as="nav" className={`sticky top-0 text-foreground z-500 ${hasScrolled ? "bg-navbar" : ""}`}>
+        <Disclosure as="nav" className={`sticky top-0 text-foreground z-100 ${hasScrolled ? "bg-navbar" : ""}`}>
             <div className={`mx-auto max-w-screen-2xl sticky top-0 px-5 ${hasScrolled ? "bg-navbar" : ""} sm:px-8`}>
                 <div className="flex h-20 items-center justify-between sticky top-0 ">
                     {/* Logo */}
