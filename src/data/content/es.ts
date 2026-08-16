@@ -153,6 +153,15 @@ export const esContent: LocalizedPortfolioContent = {
             {institution: "Unity Learn", degree: "Junior Programmer", startDate: "2025"},
             {institution: "Instituto Tecnológico del Suroccidente", degree: "Bachillerato en Ciencias y Letras con Orientación en Computación", startDate: "2005", endDate: "2020"},
         ],
+		
+		tabTitles:[
+            {shortTitle: "Resumen"},
+            {shortTitle: "Retos"},
+            {shortTitle: "Mi rol", title: "Mi rol en el projecto"},
+            {shortTitle: "Objetivos"},
+            {shortTitle: "Tecnologías", title: "Tecnologías usadas"},
+            {shortTitle: "Integrantes", title: "Integrantes del equipo"},
+        ],
 	},
 
 	games: {
@@ -298,6 +307,15 @@ export const esContent: LocalizedPortfolioContent = {
             {institution: "Universidad del Valle de Guatemala", degree: "Licenciatura en Ingeniería en Ciencias de la Computación y Tecnologías de la Información", startDate: "Ene 2021", endDate: "Dic 2021"},
             {institution: "Unity Learn", degree: "Junior Programmer", startDate: "2025"},
             {institution: "Instituto Tecnológico del Suroccidente", degree: "Bachillerato en Ciencias y Letras con Orientación en Computación", startDate: "2005", endDate: "2020"},
+        ],
+
+		tabTitles:[
+            {shortTitle: "Resumen"},
+            {shortTitle: "Retos"},
+            {shortTitle: "Mi rol", title: "Mi rol en el projecto"},
+            {shortTitle: "Objetivos"},
+            {shortTitle: "Tecnologías", title: "Tecnologías usadas"},
+            {shortTitle: "Integrantes", title: "Integrantes del equipo"},
         ],
 	},
 };

@@ -4,10 +4,11 @@ import {useState} from "react";
 import type {ProblemSection} from "@/types/types";
 
 type ProjectChallengesProps = {
+    title: string;
     challenges: ProblemSection[];
 };
 
-export  default function Challenge({challenges}: ProjectChallengesProps) {
+export  default function Challenge({title, challenges}: ProjectChallengesProps) {
     const [openItem, setOpenItem] = useState<string|null>(null);
 
     function toggleItem(id: string) {
@@ -19,7 +20,7 @@ export  default function Challenge({challenges}: ProjectChallengesProps) {
     return(
         <div>
             <h3 className="text-3xl font-bold">
-                Challenges
+                {title}
             </h3>
 
             <div className="mt-6 space-y-3">

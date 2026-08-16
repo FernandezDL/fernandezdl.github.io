@@ -1,6 +1,7 @@
 export type PortfolioType = "web" | "games";
 export type PortfolioLang = "en" | "es";
 export type Tab = "overview" | "challenges" | "role" | "goals" | "technologies" | "members";
+export type TabTitles = TabTitle[];
 
 export type Navigation = {
   about: string;
@@ -81,6 +82,7 @@ export type GoalSection = {
 export type RoleSection = {
   title: string;
   tasks: string[];
+  id: string;
 }
 
 export type Member = {
@@ -121,6 +123,8 @@ export type PortfolioContent = {
   nameSection: NameSection;
   contactSection: ContactSection;
   footerSection: FooterSection;
+
+  tabTitles: TabTitles;
 };
 
 export type LocalizedPortfolioContent = {
@@ -147,4 +151,9 @@ export type NavbarSwitchContent = {
   area: SwitchContent;
   theme: SwitchContent;
   language: SwitchContent;
+};
+
+export type TabTitle = {
+  shortTitle: string;
+  title?: string | null;
 };

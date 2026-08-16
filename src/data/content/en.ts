@@ -86,6 +86,7 @@ export const enContent: LocalizedPortfolioContent = {
             {number: 3, title: "Design", skills: ["Adobe Photoshop", "Canva", "Figma"]},
             {number: 4, title: "Tools & Workflow", skills: ["GitHub", "Postman", "Microsoft 365", "Google Workspace"]}
         ],
+
         projects: [
             {
                 number: 2,
@@ -151,6 +152,7 @@ export const enContent: LocalizedPortfolioContent = {
                 members: null
             }
         ],
+        
         workExperience: [
             {company: "Papercut Studios - Student Project", position: "UI Artist - Technical Artist - 3D Prop Modeler", startDate: "2026", description: ["Responsible for 2D asset and graphic element creation", "Menu and UI implementation", "Creation and implementation of shaders and graphic elements", "3D prop modeling"]},
             {company: "Universidad del Valle de Guatemala", position: "Instructor", startDate: "2026", description: ["Instructor for the programming module of the “Women Creating Video Games” Certificate Program"]},
@@ -160,11 +162,21 @@ export const enContent: LocalizedPortfolioContent = {
             {company: "Universidad del Valle de Guatemala", position: "Teaching Assistant", startDate: "2024", description: ["Computer Organization and Assembler", "Effective Communication", "Research and Scientific Thinking", "Web Systems and Technologies", "Artificial Intelligence", "Operative Systems"]},
             {company: "Laudato Si' Movement", position: "Database Developer", startDate: "2023", description: ["Database planning", "Database development"]},
         ],
+
         academicExperience: [
             {institution: "Vancouver Film School", degree: "Programming for Games, Mobile, and Web Development", startDate: "Sep 2025", endDate: "Aug 2026"},
             {institution: "Universidad del Valle de Guatemala", degree: "Bachelor's Degree in Computer Science", startDate: "Jan 2021", endDate: "Dec 2021"},
             {institution: "Unity Learn", degree: "Junior Programmer", startDate: "2025"},
             {institution: "Instituto Tecnológico del Suroccidente", degree: "High School Diploma in Science and Humanities with a Focus on Computer Science", startDate: "2005", endDate: "2020"},
+        ],
+
+        tabTitles:[
+            {shortTitle: "Overview"},
+            {shortTitle: "Challenges"},
+            {shortTitle: "My Role", title: "My role in the project"},
+            {shortTitle: "Goals"},
+            {shortTitle: "Techonogies", title: "Technologies used"},
+            {shortTitle: "Members", title: "Team members"},
         ],
     }, 
 
@@ -243,6 +255,7 @@ export const enContent: LocalizedPortfolioContent = {
             {number: 3, title: "Design", skills: ["Adobe Photoshop", "Canva", "Figma"]},
             {number: 4, title: "Tools & Workflow", skills: ["GitHub", "Postman", "Microsoft 365", "Google Workspace"]}
         ],
+
         projects: [
             {
                 number: 1,
@@ -281,9 +294,18 @@ export const enContent: LocalizedPortfolioContent = {
                     objectives: ["Deliver smooth and satisfying combat and movement.", "Maintain stable performance throughout the experience, targeting an average of 60 FPS.", "Support Xbox controllers, PlayStation controllers, and keyboard-and-mouse input with consistent and responsive controls."]
                 },
                 myRole: [
-                    { title: "UI & 2D artist", tasks: ["Draw all assets used in the game", "Set up all menus in the game", "Set up UI in the main level", "Code a few UI elements", "Do tags and physical elements for the team"] },
-                    { title: "Technical artist", tasks: ["Code and create shaders", "Implement the shaders in the game", "Code elements for the UI", "Write scripts to implement functionalities for some graphic elements"] },
-                    { title: "3D prop modeler", tasks: ["Search for references", "Model 3D props", "Set dress"] }
+                    {
+                        title: "UI & 2D artist", tasks: ["Draw all assets used in the game", "Set up all menus in the game", "Set up UI in the main level", "Code a few UI elements", "Do tags and physical elements for the team"],
+                        id: "ui-2d-art"
+                    },
+                    {
+                        title: "Technical artist", tasks: ["Code and create shaders", "Implement the shaders in the game", "Code elements for the UI", "Write scripts to implement functionalities for some graphic elements"],
+                        id: "tech-art"
+                    },
+                    {
+                        title: "3D prop modeler", tasks: ["Search for references", "Model 3D props", "Set dress"],
+                        id: "3d-modeler"
+                    }
                 ],
                 technologies: ["Unity", "C#", "Shader graph and HLSL", "Git & Github", "Blender", "Maya", "Photoshop"],
                 hostedLink: "https://vfs-gdpg.itch.io/papercut",
@@ -296,6 +318,7 @@ export const enContent: LocalizedPortfolioContent = {
                     {name:"Kiran Wood", role:"Enemy AI programmer"},
                     {name:"Paul Atwal", role:"Tech artist - Audio programmer - Tech designer"},
                     {name:"Angie Cole-Blais", role:"3D artist"},                    
+                    {name:"Diana Fernandez", role:"UI & 2D artist - Technical artist - 3D prop modeler"},                    
                 ]
             },
 
@@ -355,8 +378,14 @@ export const enContent: LocalizedPortfolioContent = {
                     objectives: ["Create a challenging AI opponent without making matches feel unfair or predetermined.", "Implement a Q-learning algorithm that allows the agent to continuously refine its strategy as more matches are played.", "Enable the agent to evaluate the current state of a match and select the action most likely to lead to victory."]
                 },
                 myRole: [
-                    { title: "Front-End developer", tasks: ["Set up the whole interface", "Set the characters animation", "Set up the moving parts", "Get and set up the images and visual effects", "Set up music"] },
-                    { title: "Project manager", tasks: ["Set up tasks for the whole team", "Ensure good communication of all members", "Ensure the tasks are completed and submitted on time", "Write and check all the documentation", "Check the slides to ensure good quality", "Maintain good communication with the teacher throughout the project"] }
+                    {
+                        title: "Front-End developer", tasks: ["Set up the whole interface", "Set the characters animation", "Set up the moving parts", "Get and set up the images and visual effects", "Set up music"],
+                        id: "front-end"
+                    },
+                    {
+                        title: "Project manager", tasks: ["Set up tasks for the whole team", "Ensure good communication of all members", "Ensure the tasks are completed and submitted on time", "Write and check all the documentation", "Check the slides to ensure good quality", "Maintain good communication with the teacher throughout the project"],
+                        id: "pm"
+                    }
                 ],
                 technologies: ["Python", "Kivy", "Photoshop"],
                 hostedLink: "",
@@ -366,6 +395,7 @@ export const enContent: LocalizedPortfolioContent = {
                 members: null
             }
         ],
+
         workExperience: [
             {company: "Papercut Studios - Student Project", position: "UI Artist - Technical Artist - 3D Prop Modeler", startDate: "2026", description: ["Responsible for 2D asset and graphic element creation", "Menu and UI implementation", "Creation and implementation of shaders and graphic elements", "3D prop modeling"]},
             {company: "Universidad del Valle de Guatemala", position: "Instructor", startDate: "2026", description: ["Instructor for the programming module of the “Women Creating Video Games” Certificate Program"]},
@@ -375,11 +405,21 @@ export const enContent: LocalizedPortfolioContent = {
             {company: "Universidad del Valle de Guatemala", position: "Teaching Assistant", startDate: "2024", description: ["Computer Organization and Assembler", "Effective Communication", "Research and Scientific Thinking", "Web Systems and Technologies", "Artificial Intelligence", "Operative Systems"]},
             {company: "Laudato Si' Movement", position: "Database Developer", startDate: "2023", description: ["Database planning", "Database development"]},
         ],
+
         academicExperience: [
             {institution: "Vancouver Film School", degree: "Programming for Games, Mobile, and Web Development", startDate: "Sep 2025", endDate: "Aug 2026"},
             {institution: "Universidad del Valle de Guatemala", degree: "Bachelor's Degree in Computer Science", startDate: "Jan 2021", endDate: "Dec 2021"},
             {institution: "Unity Learn", degree: "Junior Programmer", startDate: "2025"},
             {institution: "Instituto Tecnológico del Suroccidente", degree: "High School Diploma in Science and Humanities with a Focus on Computer Science", startDate: "2005", endDate: "2020"},
+        ],
+
+        tabTitles:[
+            {shortTitle: "Overview"},
+            {shortTitle: "Challenges"},
+            {shortTitle: "My Role", title: "My role in the project"},
+            {shortTitle: "Goals"},
+            {shortTitle: "Techonogies", title: "Technologies used"},
+            {shortTitle: "Members", title: "Team members"},
         ],
     },
 };

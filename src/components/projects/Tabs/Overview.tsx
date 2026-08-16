@@ -6,9 +6,10 @@ import Image from "next/image";
 type ProjectOverviewProps = {
     overview: string;
     photos: string[]| null;
+    title: string;
 };
 
-export default function ProjectOverview({overview, photos}: ProjectOverviewProps) {
+export default function ProjectOverview({overview, photos, title}: ProjectOverviewProps) {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     useEffect(() => {
@@ -30,7 +31,7 @@ export default function ProjectOverview({overview, photos}: ProjectOverviewProps
     return(
         <div>
             <h3 className="text-3xl font-bold">
-                Overview
+                {title}
             </h3>
 
             <p className="mt-4 mb-8">{overview}</p>

@@ -148,7 +148,7 @@ export default async function PortfolioPage({params}: PortfolioPageProps) {
 						<p className="text-xs lg:text-sm font-light my-4 shrink-0">{portfolioContent.sections[2].title}</p>
 					</div>
 
-					<Projects projectList={portfolioContent.projects} />
+					<Projects projectList={portfolioContent.projects} tabTitles={portfolioContent.tabTitles} />
 				</div>
 			</div>
 		</section>
@@ -216,10 +216,10 @@ export default async function PortfolioPage({params}: PortfolioPageProps) {
 								</a>
 							</div>
 
-							<div className="flex space-x-2 items-center">
+							{/* <div className="flex space-x-2 items-center">
 								<PhoneIcon/>
 								<p className="text-md">(+502) 4023-8478</p>
-							</div>
+							</div> */}
 						</div>
 						{/* <div className="w-full mt-4 lg:mt-0 lg:w-1/2 justify-end">
 							<p className="text-md">{portfolioContent.contactSection.name}:</p>

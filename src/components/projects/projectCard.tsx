@@ -1,15 +1,16 @@
 "use client"
 
 import Image from "next/image";
-import type { Project } from "@/types/types";
+import type { Project, TabTitles } from "@/types/types";
 import ProjectCaseStudy from "@/components/projects/projectCaseStudy";
 import {useState, useEffect} from "react";
 
 type ProjectsProps = {
     projectList: Project[];
+    tabTitles: TabTitles;
 };
 
-export default function Projects({ projectList }: ProjectsProps) {
+export default function Projects({ projectList, tabTitles }: ProjectsProps) {
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
     useEffect(() => {
@@ -68,6 +69,7 @@ export default function Projects({ projectList }: ProjectsProps) {
                 <ProjectCaseStudy
                     project={selectedProject}
                     onClose={() => setSelectedProject(null)}
+                    tabTitles={tabTitles}
                 />
             )}
         </>
