@@ -12,7 +12,7 @@ export default function AcademicExperience({
             {academicExperienceList.map((experience) => (
                 <div
                     key={`${experience.institution}-${experience.degree}-${experience.startDate}`}
-                    className="mb-6 w-[90%] lg:w-2/3 text-white"
+                    className="mb-6 w-[90%] lg:w-full text-white"
                 >
                     <div className="flex w-full items-center justify-between">
                         <h3 className="text-md lg:text-lg font-bold w-2/3 lg:w-3/4">

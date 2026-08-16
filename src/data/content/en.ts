@@ -154,18 +154,18 @@ export const enContent: LocalizedPortfolioContent = {
         ],
         
         workExperience: [
-            {company: "Papercut Studios - Student Project", position: "UI Artist - Technical Artist - 3D Prop Modeler", startDate: "2026", description: ["Responsible for 2D asset and graphic element creation", "Menu and UI implementation", "Creation and implementation of shaders and graphic elements", "3D prop modeling"]},
+            {company: "Papercut Studios - Student Project", position: "UI Artist - Technical Artist - 3D Prop Modeler", startDate: "Feb 2026", endDate: "Aug 2026", description: ["Responsible for 2D asset and graphic element creation", "Menu and UI implementation", "Creation and implementation of shaders and graphic elements", "3D prop modeling"]},
             {company: "Universidad del Valle de Guatemala", position: "Instructor", startDate: "2026", description: ["Instructor for the programming module of the “Women Creating Video Games” Certificate Program"]},
             {company: "Cerial Killer Games - Student Project", position: "Game Developer", startDate: "Nov 2025", endDate: "Feb 2026", description: ["Enemy AI Programmer"]},
             {company: "Estudio Faser", position: "Full-stack developer", startDate: "2025", description: ["Full-stack development", "API Development", "Database management"]},
             {company: "Spring Bus", position: "Front-end Developer", startDate: "2024", description: ["Front-end development"]},
-            {company: "Universidad del Valle de Guatemala", position: "Teaching Assistant", startDate: "2024", description: ["Computer Organization and Assembler", "Effective Communication", "Research and Scientific Thinking", "Web Systems and Technologies", "Artificial Intelligence", "Operative Systems"]},
+            {company: "Universidad del Valle de Guatemala", position: "Teaching Assistant", startDate: "2023", endDate: "2025", description: ["Computer Organization and Assembler", "Effective Communication", "Research and Scientific Thinking", "Web Systems and Technologies", "Artificial Intelligence", "Operative Systems"]},
             {company: "Laudato Si' Movement", position: "Database Developer", startDate: "2023", description: ["Database planning", "Database development"]},
         ],
 
         academicExperience: [
             {institution: "Vancouver Film School", degree: "Programming for Games, Mobile, and Web Development", startDate: "Sep 2025", endDate: "Aug 2026"},
-            {institution: "Universidad del Valle de Guatemala", degree: "Bachelor's Degree in Computer Science", startDate: "Jan 2021", endDate: "Dec 2021"},
+            {institution: "Universidad del Valle de Guatemala", degree: "Bachelor's Degree in Computer Science", startDate: "Jan 2021", endDate: "Nov 2025"},
             {institution: "Unity Learn", degree: "Junior Programmer", startDate: "2025"},
             {institution: "Instituto Tecnológico del Suroccidente", degree: "High School Diploma in Science and Humanities with a Focus on Computer Science", startDate: "2005", endDate: "2020"},
         ],
@@ -175,7 +175,7 @@ export const enContent: LocalizedPortfolioContent = {
             {shortTitle: "Challenges"},
             {shortTitle: "My Role", title: "My role in the project"},
             {shortTitle: "Goals"},
-            {shortTitle: "Techonogies", title: "Technologies used"},
+            {shortTitle: "Technogies", title: "Technologies used"},
             {shortTitle: "Members", title: "Team members"},
         ],
     }, 
@@ -209,7 +209,7 @@ export const enContent: LocalizedPortfolioContent = {
         
         nameSection: {
             role: "Game Developer",
-            statement: "I'm a full-stack developer passionate about creating and bringing designs to life as faithfully as possible. I focus on visual detail, efficient implementation, and creating polished digital experiences that work as well as they look.",
+            statement: "I'm a game developer and technical artist passionate about creating polished, expressive, and responsive game experiences. I enjoy working between art and programming, with a focus on UI, shaders, visual effects, and the small details that make a game feel cohesive and complete.",           
             contactButton: "Contact",
             viewWorkButton: "View Work",
         },
@@ -250,10 +250,10 @@ export const enContent: LocalizedPortfolioContent = {
 		},
 
         skills: [
-            {number: 1, title: "Front-end", skills: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js", "Angular", "Vue.js", "Tailwind CSS", "Bootstrap"]},
-            {number: 2, title: "Back-end", skills: ["Node.js", "Express", "Python", "C#"]},
-            {number: 3, title: "Design", skills: ["Adobe Photoshop", "Canva", "Figma"]},
-            {number: 4, title: "Tools & Workflow", skills: ["GitHub", "Postman", "Microsoft 365", "Google Workspace"]}
+            {number: 1, title: "Game Development", skills: ["Unity", "C#", "Python"]},
+            {number: 2, title: "3D Art", skills: ["Blender", "Maya"]},
+            {number: 3, title: "2D Art", skills: ["Adobe Photoshop", "Canva"]},
+			{number: 4, title: "Tools & Workflow", skills: ["GitHub", "Microsoft 365", "Google Workspace"]}
         ],
 
         projects: [
@@ -321,7 +321,6 @@ export const enContent: LocalizedPortfolioContent = {
                     {name:"Diana Fernandez", role:"UI & 2D artist - Technical artist - 3D prop modeler"},                    
                 ]
             },
-
             {
                 number: 2,
                 title: "The Last Course",
@@ -343,6 +342,31 @@ export const enContent: LocalizedPortfolioContent = {
                 photos: null,
                 members: null
             },
+            {
+				number: 4,
+				title: "Conversation on the sofa",
+				description: "Narrative desition game",
+				image: "/Img/Conversation-on-the-sofa/conversation1.png",
+				tags: ["Unity", "C#", "GitHub"],
+				year: 2025,
+				overview: "",
+				problems: [],
+				goals: {
+					description: "",
+					objectives: []
+				},
+				myRole: [],
+				technologies: [],
+				hostedLink: "https://fernandezdl.itch.io/conversation-on-the-sofa",
+				githubLink: "https://github.com/FernandezDL/conversation-on-the-sofa.git",
+				videos: [],
+				photos: [
+					"/Img/Conversation-on-the-sofa/conversation1.png",
+					"/Img/Conversation-on-the-sofa/conversation2.png",
+					"/Img/Conversation-on-the-sofa/conversation3.png"
+				],
+				members: null
+			},
             {
                 number: 3,
                 title: "Card-Jitsu Remake",
@@ -397,18 +421,18 @@ export const enContent: LocalizedPortfolioContent = {
         ],
 
         workExperience: [
-            {company: "Papercut Studios - Student Project", position: "UI Artist - Technical Artist - 3D Prop Modeler", startDate: "2026", description: ["Responsible for 2D asset and graphic element creation", "Menu and UI implementation", "Creation and implementation of shaders and graphic elements", "3D prop modeling"]},
+            {company: "Papercut Studios - Student Project", position: "UI Artist - Technical Artist - 3D Prop Modeler", startDate: "Feb 2026", endDate: "Aug 2026", description: ["Responsible for 2D asset and graphic element creation", "Menu and UI implementation", "Creation and implementation of shaders and graphic elements", "3D prop modeling"]},
             {company: "Universidad del Valle de Guatemala", position: "Instructor", startDate: "2026", description: ["Instructor for the programming module of the “Women Creating Video Games” Certificate Program"]},
             {company: "Cerial Killer Games - Student Project", position: "Game Developer", startDate: "Nov 2025", endDate: "Feb 2026", description: ["Enemy AI Programmer"]},
             {company: "Estudio Faser", position: "Full-stack developer", startDate: "2025", description: ["Full-stack development", "API Development", "Database management"]},
             {company: "Spring Bus", position: "Front-end Developer", startDate: "2024", description: ["Front-end development"]},
-            {company: "Universidad del Valle de Guatemala", position: "Teaching Assistant", startDate: "2024", description: ["Computer Organization and Assembler", "Effective Communication", "Research and Scientific Thinking", "Web Systems and Technologies", "Artificial Intelligence", "Operative Systems"]},
+            {company: "Universidad del Valle de Guatemala", position: "Teaching Assistant", startDate: "2023", endDate: "2025", description: ["Computer Organization and Assembler", "Effective Communication", "Research and Scientific Thinking", "Web Systems and Technologies", "Artificial Intelligence", "Operative Systems"]},
             {company: "Laudato Si' Movement", position: "Database Developer", startDate: "2023", description: ["Database planning", "Database development"]},
         ],
 
         academicExperience: [
             {institution: "Vancouver Film School", degree: "Programming for Games, Mobile, and Web Development", startDate: "Sep 2025", endDate: "Aug 2026"},
-            {institution: "Universidad del Valle de Guatemala", degree: "Bachelor's Degree in Computer Science", startDate: "Jan 2021", endDate: "Dec 2021"},
+            {institution: "Universidad del Valle de Guatemala", degree: "Bachelor's Degree in Computer Science", startDate: "Jan 2021", endDate: "Nov 2025"},
             {institution: "Unity Learn", degree: "Junior Programmer", startDate: "2025"},
             {institution: "Instituto Tecnológico del Suroccidente", degree: "High School Diploma in Science and Humanities with a Focus on Computer Science", startDate: "2005", endDate: "2020"},
         ],
@@ -418,7 +442,7 @@ export const enContent: LocalizedPortfolioContent = {
             {shortTitle: "Challenges"},
             {shortTitle: "My Role", title: "My role in the project"},
             {shortTitle: "Goals"},
-            {shortTitle: "Techonogies", title: "Technologies used"},
+            {shortTitle: "Technogies", title: "Technologies used"},
             {shortTitle: "Members", title: "Team members"},
         ],
     },

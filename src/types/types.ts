@@ -63,7 +63,7 @@ export type Project = {
   technologies: string[];
   hostedLink: string;
   githubLink: string | null;
-  videos: string[];
+  videos: string[] | null;
   photos: string[] | null;
   members: Member[] | null;
 };

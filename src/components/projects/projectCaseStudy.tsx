@@ -119,7 +119,7 @@ export default function ProjectCaseStudy({project, onClose, tabTitles}: ProjectC
                 {/* TAB CONTENT */}
                 <div className="p-8">
                     {activeTab === "overview" && (
-                        <ProjectOverview overview={project.overview} photos={project.photos} title={tabTitles[0].title ? tabTitles[0].title : tabTitles[0].shortTitle} />
+                        <ProjectOverview overview={project.overview} photos={project.photos} videos={project.videos} title={tabTitles[0].title ? tabTitles[0].title : tabTitles[0].shortTitle} />
                     )}
 
                     {activeTab === "challenges" && (

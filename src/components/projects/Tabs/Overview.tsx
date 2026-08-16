@@ -6,10 +6,33 @@ import Image from "next/image";
 type ProjectOverviewProps = {
     overview: string;
     photos: string[]| null;
+    videos: string[] | null;
     title: string;
 };
 
-export default function ProjectOverview({overview, photos, title}: ProjectOverviewProps) {
+function getYouTubeEmbedUrl(videoUrl: string): string | null {
+    try {
+        const url = new URL(videoUrl);
+
+        if (url.hostname === "youtu.be") {
+            return `https://www.youtube.com/embed/${url.pathname.slice(1)}`;
+        }
+
+        if (url.hostname === "youtube.com" || url.hostname === "www.youtube.com") {
+            const videoId = url.searchParams.get("v");
+
+            if (videoId) {
+                return `https://www.youtube.com/embed/${videoId}`;
+            }
+        }
+
+        return null;
+    } catch {
+        return null;
+    }
+}
+
+export default function ProjectOverview({overview, photos, title, videos}: ProjectOverviewProps) {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     useEffect(() => {
@@ -71,6 +94,35 @@ export default function ProjectOverview({overview, photos, title}: ProjectOvervi
                 </div>
             )}
 
+            {/* Videos */}
+            {videos && videos.length > 0 && (
+                <div className="mt-8 grid grid-cols-1 gap-6">
+                    {videos.map((video) => {
+                        const embedUrl = getYouTubeEmbedUrl(video);
+
+                        if (!embedUrl) {
+                            return null;
+                        }
+
+                        return (
+                            <div
+                                key={video}
+                                className="aspect-video w-full overflow-hidden rounded-md"
+                            >
+                                <iframe
+                                    src={embedUrl}
+                                    title={`${title} gameplay video`}
+                                    className="h-full w-full"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen
+                                    loading="lazy"
+                                />
+                            </div>
+                        );
+                    })}
+                </div>
+            )}
+            
             {/* LIGHTBOX */}
             {selectedImage && (
                 <div
