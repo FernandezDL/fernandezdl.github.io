@@ -87,9 +87,48 @@ export const esContent: LocalizedPortfolioContent = {
         ],
 
 		projects: [
-            {number: 2, title: "Buscaminas Remake", description:"Remake del juego Buscaminas de Windows XP", image: "/Img/Minesweeper.png", tags: ["Angular", "TypeScript", "CSS3"], year: 2023},
-            {number: 1, title: "Replicando Duolingo", description:"Replica de una página web", image: "/Img/Duolingo.png", tags: ["CSS3", "HTML5", "Photoshop", "Babel"], year: 2023},
-            {number: 3, title: "Hamilmemory", description:"Juego de memoria con temática de Hamilton", image: "/Img/Hamilmemory.png", tags: ["HTML5", "JavaScript", "CSS3"], year: 2023}
+            {
+				number: 2, title: "Buscaminas Remake", description: "Remake del juego Buscaminas de Windows XP", image: "/Img/Minesweeper.png", tags: ["Angular", "TypeScript", "CSS3"], year: 2023,
+				overview: "",
+				problems: [],
+				goals: {
+					description: "",
+					objectives: []
+				},
+				myRole: [],
+				technologies: [],
+				hostedLink: "",
+				githubLink: null,
+				videos: []
+			},
+            {
+				number: 1, title: "Replicando Duolingo", description: "Replica de una página web", image: "/Img/Duolingo.png", tags: ["CSS3", "HTML5", "Photoshop", "Babel"], year: 2023,
+				overview: "",
+				problems: [],
+				goals: {
+					description: "",
+					objectives: []
+				},
+				myRole: [],
+				technologies: [],
+				hostedLink: "",
+				githubLink: null,
+				videos: []
+			},
+            {
+				number: 3, title: "Hamilmemory", description: "Juego de memoria con temática de Hamilton", image: "/Img/Hamilmemory.png", tags: ["HTML5", "JavaScript", "CSS3"], year: 2023,
+				overview: "",
+				problems: [],
+				goals: {
+					description: "",
+					objectives: []
+				},
+				myRole: [],
+				technologies: [],
+				hostedLink: "",
+				githubLink: null,
+				videos: []
+			}
         ],
 		
 		workExperience: [
@@ -187,9 +226,49 @@ export const esContent: LocalizedPortfolioContent = {
         ],
 
 		projects: [
-            {number: 1, title: "Papercut", description:"Juego 3D de tipo 'Bullet-Hell'", image: "/Img/papercut2.png", tags: ["Unity", "C#", "Photoshop", "GitHub", "Blender"], year: 2026},
-            {number: 2, title: "The Last Course", description:"Juego de combate y cocina Top-Down", image: "/Img/TheLastCourse.png", tags: ["Unity", "C#", "GitHub"], year: 2026},
-            {number: 3, title: "Card-Jitsu Remake", description:"Remake del juego de Club Penguin", image: "/Img/Cardjitsu.png", tags: ["Python", "Photoshop", "Kivy"], year: 2023}
+            {
+				number: 1, title: "Papercut", description: "Juego 3D de tipo 'Bullet-Hell'", image: "/Img/papercut2.png", tags: ["Unity", "C#", "Photoshop", "GitHub", "Blender"], year: 2026,
+				overview: "Papercut es un juego 3D de acción Bullet Hell con perspectica de tercera persona desarrollado en Unity. Creado como peroyecto final del programa Programming for Games, Web & Mobile Development de Vancouver Film School, ofrece una experiencia de ritmo rápido de 10 minutos.\n" +
+				"El juego sigue a SUsie, una niña de 7 años que es transportada a un reino demoniaco hecho de papel de origami. Armada con unas tijeras máginas gigantes, deberá abrirse paso luchando a través del reino para rescatar a Mr. Business -su osito de peluche y mejor amigo- y encontrar el camino de regreso a casa.",
+				problems: [],
+				goals: {
+					description: "",
+					objectives: []
+				},
+				myRole: [],
+				technologies: [],
+				hostedLink: "",
+				githubLink: null,
+				videos: []
+			},
+            {
+				number: 2, title: "The Last Course", description: "Juego de combate y cocina Top-Down", image: "/Img/TheLastCourse.png", tags: ["Unity", "C#", "GitHub"], year: 2026,
+				overview: "",
+				problems: [],
+				goals: {
+					description: "",
+					objectives: []
+				},
+				myRole: [],
+				technologies: [],
+				hostedLink: "",
+				githubLink: null,
+				videos: []
+			},
+            {
+				number: 3, title: "Card-Jitsu Remake", description: "Remake del juego de Club Penguin", image: "/Img/Cardjitsu.png", tags: ["Python", "Photoshop", "Kivy"], year: 2023,
+				overview: "",
+				problems: [],
+				goals: {
+					description: "",
+					objectives: []
+				},
+				myRole: [],
+				technologies: [],
+				hostedLink: "",
+				githubLink: null,
+				videos: []
+			}
         ],
 
 		workExperience: [
