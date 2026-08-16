@@ -7,6 +7,8 @@ import ProjectOverview from "@/components/projects/Tabs/Overview";
 import Challenge from "@/components/projects/Tabs/Challenge";
 import Image from "next/image";
 import ItchIcon from "@/components/Icons/itch";
+import PersonIcon from "../Icons/person";
+import GithubIcon from "../Icons/github";
 
 type ProjectCaseStudyProps = {
     project: Project;
@@ -38,18 +40,30 @@ export default function ProjectCaseStudy({project, onClose}: ProjectCaseStudyPro
                         />
                     </div>
 
-                    <h2 className="text-5xl font-bold">
+                    <h2 className="text-5xl font-bold mt-2">
                         {project.title}
                     </h2>
 
-                    <p className="mt-2">
-                        {project.description}
-                    </p>
+                    <div className="flex space-x-2 mt-2">
+                        <p>{project.description} -</p>
+
+                        <div className="flex">
+                            <p>{project.members?.length ? project.members.length + 1 : 1}</p>
+
+                            <PersonIcon/>
+                        </div>
+                    </div>
                     
-                    <div className="flex space-x-2">
+                    <div className="flex space-x-2 mt-2">
                         {project.hostedLink && (
-                            <a href={project.hostedLink}>
+                            <a href={project.hostedLink} target="_blank" rel="noopener noreferrer">
                                 <ItchIcon/>
+                            </a>
+                        )}
+
+                        {project.githubLink && (
+                            <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                                <GithubIcon/>
                             </a>
                         )}
                     </div>
@@ -87,12 +101,20 @@ export default function ProjectCaseStudy({project, onClose}: ProjectCaseStudyPro
                         active={activeTab === "technologies"}
                         onClick={() => setActiveTab("technologies")}
                     />
+
+                    {project.members?.length && (
+                        <TabButton
+                            text="Members"
+                            active={activeTab === "members"}
+                            onClick={() => setActiveTab("members")}
+                        />
+                    )}
                 </div>
                 
                 {/* TAB CONTENT */}
                 <div className="p-8">
                     {activeTab === "overview" && (
-                        <ProjectOverview overview={project.overview} />
+                        <ProjectOverview overview={project.overview} photos={project.photos} />
                     )}
 
                     {activeTab === "challenges" && (

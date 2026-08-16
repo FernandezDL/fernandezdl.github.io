@@ -104,7 +104,9 @@ export const enContent: LocalizedPortfolioContent = {
                 technologies: [],
                 hostedLink: "",
                 videos: [],
-                githubLink: null
+                githubLink: null,
+                photos: null,
+                members: null
             },
             {
                 number: 1,
@@ -123,7 +125,9 @@ export const enContent: LocalizedPortfolioContent = {
                 technologies: [],
                 hostedLink: "",
                 videos: [],
-                githubLink: null
+                githubLink: null,
+                photos: null,
+                members: null
             },
             {
                 number: 3,
@@ -142,7 +146,9 @@ export const enContent: LocalizedPortfolioContent = {
                 technologies: [],
                 hostedLink: "",
                 videos: [],
-                githubLink: null
+                githubLink: null,
+                photos: null,
+                members: null
             }
         ],
         workExperience: [
@@ -270,17 +276,27 @@ export const enContent: LocalizedPortfolioContent = {
                         id: "susie-visibility"
                     }
                 ],
-                goals: {description:"The main goal of PaperCut was to create an engaging, responsive, and polished 10-minute gameplay experience. To accomplish this, the project focused on three key objectives:", 
-                    objectives:["Deliver smooth and satisfying combat and movement.", "Maintain stable performance throughout the experience, targeting an average of 60 FPS.", "Support Xbox controllers, PlayStation controllers, and keyboard-and-mouse input with consistent and responsive controls."]},
+                goals: {
+                    description: "The main goal of PaperCut was to create an engaging, responsive, and polished 10-minute gameplay experience. To accomplish this, the project focused on three key objectives:",
+                    objectives: ["Deliver smooth and satisfying combat and movement.", "Maintain stable performance throughout the experience, targeting an average of 60 FPS.", "Support Xbox controllers, PlayStation controllers, and keyboard-and-mouse input with consistent and responsive controls."]
+                },
                 myRole: [
-                    {title:"UI & 2D artist", tasks:["Draw all assets used in the game", "Set up all menus in the game", "Set up UI in the main level", "Code a few UI elements", "Do tags and physical elements for the team"]},
-                    {title:"Technical artist", tasks: ["Code and create shaders", "Implement the shaders in the game", "Code elements for the UI", "Write scripts to implement functionalities for some graphic elements"]},
-                    {title:"3D prop modeler", tasks:["Search for references", "Model 3D props", "Set dress"]}
+                    { title: "UI & 2D artist", tasks: ["Draw all assets used in the game", "Set up all menus in the game", "Set up UI in the main level", "Code a few UI elements", "Do tags and physical elements for the team"] },
+                    { title: "Technical artist", tasks: ["Code and create shaders", "Implement the shaders in the game", "Code elements for the UI", "Write scripts to implement functionalities for some graphic elements"] },
+                    { title: "3D prop modeler", tasks: ["Search for references", "Model 3D props", "Set dress"] }
                 ],
                 technologies: ["Unity", "C#", "Shader graph and HLSL", "Git & Github", "Blender", "Maya", "Photoshop"],
                 hostedLink: "https://vfs-gdpg.itch.io/papercut",
                 githubLink: null,
-                videos: ["https://www.youtube.com/watch?v=2lFxIiGFCng"]
+                videos: ["https://www.youtube.com/watch?v=2lFxIiGFCng"],
+                photos: ["/Img/Papercut/Papercut1.png", "/Img/Papercut/Papercut2.png", "/Img/Papercut/Papercut3.png"],
+                members: [
+                    {name:"Joel van der Lee", role:"Project manager - Level designer - Narrative designer"},
+                    {name:"Vinicius Januzzi", role:"Gameplay programmer - UI programmer"},
+                    {name:"Kiran Wood", role:"Enemy AI programmer"},
+                    {name:"Paul Atwal", role:"Tech artist - Audio programmer - Tech designer"},
+                    {name:"Angie Cole-Blais", role:"3D artist"},                    
+                ]
             },
 
             {
@@ -295,12 +311,14 @@ export const enContent: LocalizedPortfolioContent = {
                     title: "", description: "",
                     id: "0"
                 }],
-                goals: {description:"", objectives: [""]},
+                goals: { description: "", objectives: [""] },
                 myRole: [],
                 technologies: [],
                 hostedLink: "",
                 githubLink: null,
-                videos: []
+                videos: [],
+                photos: null,
+                members: null
             },
             {
                 number: 3,
@@ -332,15 +350,20 @@ export const enContent: LocalizedPortfolioContent = {
                         id: "graphics"
                     }
                 ],
-                goals: {description:"The main goal of the project was to recreate the nostalgic appeal of Card-Jitsu while delivering a fun, fair, and engaging experience for former Club Penguin players. To accomplish this, the project focused on three key objectives:", 
-                    objectives: ["Create a challenging AI opponent without making matches feel unfair or predetermined.", "Implement a Q-learning algorithm that allows the agent to continuously refine its strategy as more matches are played.", "Enable the agent to evaluate the current state of a match and select the action most likely to lead to victory."]},
+                goals: {
+                    description: "The main goal of the project was to recreate the nostalgic appeal of Card-Jitsu while delivering a fun, fair, and engaging experience for former Club Penguin players. To accomplish this, the project focused on three key objectives:",
+                    objectives: ["Create a challenging AI opponent without making matches feel unfair or predetermined.", "Implement a Q-learning algorithm that allows the agent to continuously refine its strategy as more matches are played.", "Enable the agent to evaluate the current state of a match and select the action most likely to lead to victory."]
+                },
                 myRole: [
-                    {title:"Front-End developer", tasks:["Set up the whole interface","Set the characters animation", "Set up the moving parts", "Get and set up the images and visual effects", "Set up music"]},
-                    {title:"Project manager", tasks:["Set up tasks for the whole team", "Ensure good communication of all members", "Ensure the tasks are completed and submitted on time", "Write and check all the documentation", "Check the slides to ensure good quality", "Maintain good communication with the teacher throughout the project"]}],
+                    { title: "Front-End developer", tasks: ["Set up the whole interface", "Set the characters animation", "Set up the moving parts", "Get and set up the images and visual effects", "Set up music"] },
+                    { title: "Project manager", tasks: ["Set up tasks for the whole team", "Ensure good communication of all members", "Ensure the tasks are completed and submitted on time", "Write and check all the documentation", "Check the slides to ensure good quality", "Maintain good communication with the teacher throughout the project"] }
+                ],
                 technologies: ["Python", "Kivy", "Photoshop"],
                 hostedLink: "",
                 githubLink: "https://github.com/FernandezDL/Card-Jitsu_Remake",
-                videos: []
+                videos: [],
+                photos: null,
+                members: null
             }
         ],
         workExperience: [

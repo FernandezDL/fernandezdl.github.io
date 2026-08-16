@@ -45,7 +45,7 @@ export default function Projects({ projectList }: ProjectsProps) {
                                 <p>{project.year}</p>
                             </div>
     
-                            <p className="text-xs lg:text-sm font-light text-white">
+                            <p className="text-xs lg:text-sm font-light text-white text-left">
                                 {project.description}
                             </p>
     

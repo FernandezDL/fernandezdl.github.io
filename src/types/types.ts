@@ -1,6 +1,6 @@
 export type PortfolioType = "web" | "games";
 export type PortfolioLang = "en" | "es";
-export type Tab = "overview" | "challenges" | "role" | "goals" | "technologies";
+export type Tab = "overview" | "challenges" | "role" | "goals" | "technologies" | "members";
 
 export type Navigation = {
   about: string;
@@ -63,6 +63,8 @@ export type Project = {
   hostedLink: string;
   githubLink: string | null;
   videos: string[];
+  photos: string[] | null;
+  members: Member[] | null;
 };
 
 export type ProblemSection = {
@@ -79,6 +81,11 @@ export type GoalSection = {
 export type RoleSection = {
   title: string;
   tasks: string[];
+}
+
+export type Member = {
+  name: string;
+  role: string;
 }
 
 export type Experience = {
